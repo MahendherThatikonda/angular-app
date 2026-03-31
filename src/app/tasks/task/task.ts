@@ -1,6 +1,6 @@
 import { Component, Input, inject } from '@angular/core';
-import { Card } from "../../shared/card/card";
-import { DatePipe } from '@angular/common';
+//import { Card } from "../../shared/card/card";
+//import { DatePipe } from '@angular/common';
 import { TasksService } from '../tasks.service';
 type Tsk ={
   id:string;
@@ -13,7 +13,8 @@ type Tsk ={
 
 @Component({
   selector: 'app-task',
-  imports: [Card,DatePipe],
+  standalone:false,
+  //imports: [Card,DatePipe],
   templateUrl: './task.html',
   styleUrl: './task.css',
 })

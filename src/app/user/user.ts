@@ -1,6 +1,6 @@
 import { Component,Input, Output, EventEmitter, } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
-import { Card } from "../shared/card/card";
+//import { Card } from "../shared/card/card";
 
 //const randomIndex=Math.floor(Math.random()*DUMMY_USERS.length);
 
@@ -13,8 +13,8 @@ type Usr=
 
 @Component({
   selector: 'app-user',
-  standalone:true,
-  imports: [Card],
+  standalone:false,
+//  imports: [Card],
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
